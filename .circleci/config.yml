@@ -17,7 +17,7 @@ jobs:
             echo 'export IMAGE_NAME=python-circleci-docker' >> $BASH_ENV 
             virtualenv helloworld
             . helloworld/bin/activate
-            pip install pip==18.1
+            pip install --upgrade pip
             pip install --upgrade setuptools
             pip install --no-cache-dir -r requirements.txt
       - run:
