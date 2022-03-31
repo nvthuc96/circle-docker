@@ -18,6 +18,7 @@ jobs:
             virtualenv helloworld
             . helloworld/bin/activate
             pip install pip==18.1
+            pip install --upgrade setuptools
             pip install --no-cache-dir -r requirements.txt
       - run:
           name: Run Tests
